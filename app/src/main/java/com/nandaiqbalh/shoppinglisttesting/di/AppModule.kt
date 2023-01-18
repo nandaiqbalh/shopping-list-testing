@@ -2,11 +2,11 @@ package com.nandaiqbalh.shoppinglisttesting.di
 
 import android.content.Context
 import androidx.room.Room
-import com.nandaiqbalh.shoppinglisttesting.data.DefaultShoppingRepository
 import com.nandaiqbalh.shoppinglisttesting.data.local.database.ShoppingItemDatabase
 import com.nandaiqbalh.shoppinglisttesting.data.local.database.dao.ShoppingItemDao
 import com.nandaiqbalh.shoppinglisttesting.data.remote.service.PixabayAPI
 import com.nandaiqbalh.shoppinglisttesting.data.repositories.ShoppingRepository
+import com.nandaiqbalh.shoppinglisttesting.data.repositories.ShoppingRepositoryImpl
 import com.nandaiqbalh.shoppinglisttesting.other.Constants.BASE_URL
 import com.nandaiqbalh.shoppinglisttesting.other.Constants.DATABASE_NAME
 import dagger.Module
@@ -33,7 +33,7 @@ object AppModule {
 	fun provideDefaultShoppingRepository(
 		dao: ShoppingItemDao,
 		api: PixabayAPI
-	) = DefaultShoppingRepository(dao, api) as ShoppingRepository
+	) = ShoppingRepositoryImpl(dao, api) as ShoppingRepository
 
 
 	@Singleton

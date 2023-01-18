@@ -1,12 +1,13 @@
-package com.nandaiqbalh.shoppinglisttesting.presentation.ui
+package com.nandaiqbalh.shoppinglisttesting.presentation.ui.fragment
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.nandaiqbalh.shoppinglisttesting.R
+import com.nandaiqbalh.shoppinglisttesting.presentation.ui.ShoppingViewModel
 
-class ImagePickFragment : Fragment(R.layout.fragment_image_pick){
+class AddShoppingItemFragment : Fragment(R.layout.fragment_add_shopping_item){
 
 	lateinit var viewModel: ShoppingViewModel
 
