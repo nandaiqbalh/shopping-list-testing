@@ -6,6 +6,8 @@ import com.google.common.truth.Truth.assertThat
 import com.nandaiqbalh.shoppinglisttesting.data.local.database.ShoppingItemDatabase
 import com.nandaiqbalh.shoppinglisttesting.data.local.database.entity.ShoppingItemEntity
 import com.nandaiqbalh.shoppinglisttesting.getOrAwaitValue
+import com.nandaiqbalh.shoppinglisttesting.launchFragmentInHiltContainer
+import com.nandaiqbalh.shoppinglisttesting.presentation.ui.fragment.ShoppingFragment
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -59,7 +61,12 @@ class ShoppingItemDaoTest {
 		// closing database after testing the database
 		database.close()
 	}
+	@Test
+	fun testLaunchFragmentInHiltContainer() {
+		launchFragmentInHiltContainer<ShoppingFragment> {
 
+		}
+	}
 	@Test
 	fun insertShoppingItem() = runBlockingTest {
 

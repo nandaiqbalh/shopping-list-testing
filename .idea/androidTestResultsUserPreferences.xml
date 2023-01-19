@@ -19,6 +19,22 @@
             </AndroidTestResultsTableState>
           </value>
         </entry>
+        <entry key="-1769934015">
+          <value>
+            <AndroidTestResultsTableState>
+              <option name="preferredColumnWidths">
+                <map>
+                  <entry key="Duration" value="90" />
+                  <entry key="K1AXGF03B474LDJ" value="120" />
+                  <entry key="Tests" value="360" />
+                  <entry key="asus&#10; ASUS_X00TD" value="120" />
+                  <entry key="emulator-5554" value="120" />
+                  <entry key="samsung&#10; SM-G988N" value="120" />
+                </map>
+              </option>
+            </AndroidTestResultsTableState>
+          </value>
+        </entry>
         <entry key="1073737429">
           <value>
             <AndroidTestResultsTableState>

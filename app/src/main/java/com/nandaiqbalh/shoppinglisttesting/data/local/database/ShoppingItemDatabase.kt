@@ -8,7 +8,8 @@ import com.nandaiqbalh.shoppinglisttesting.data.local.database.entity.ShoppingIt
 
 @Database(
 	entities = [ShoppingItemEntity::class],
-	version = 1
+	version = 1,
+	exportSchema = false
 )
 abstract class ShoppingItemDatabase : RoomDatabase(){
 
